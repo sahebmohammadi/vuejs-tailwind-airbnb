@@ -1,23 +1,7 @@
 <template>
   <div id="app" class="min-h-screen bg-gray-200 antialiased">
     <SiteHeader />
-    <section class="bg-gray-800 px-4 py-3 flex justify-between items-center">
-      <div class="relative">
-        <div class="absolute inset-y-0 left-0 flex items-center pl-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-        </div>
-        <input class="w-full pl-10 pr-3 py-2 rounded-lg outline-none bg-gray-900 text-white focus:outline-none" type="text" placeholder="Search by keywords" />
-      </div>
-
-      <button class="outline-none border-0 inline-flex p-2 rounded-lg px-3 bg-gray-700 hover:bg-gray-600">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-        </svg>
-        <!-- <span class="text-white ml-1 font-medium"> Filters</span> -->
-      </button>
-    </section>
+    <SearchFilters />
     <main class="px-4 py-6">
       <h3 class="text-xl tex-gray-900">Los Angeles</h3>
       <p class="text-gray-600">Live like the stars in these luxurious Southern California estates.</p>
@@ -68,11 +52,13 @@
 
 <script>
 import SiteHeader from "./components/SiteHeader.vue";
+import SearchFilters from "./components/SearchFilters.vue";
 
 export default {
   name: "app",
   components: {
     SiteHeader,
+    SearchFilters,
   },
 };
 </script>

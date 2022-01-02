@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
+
+.select {
+  @apply rounded-md  bg-gray-700 border-transparent text-white focus:outline-none focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50;
+}
+
 @tailwind utilities;
