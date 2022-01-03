@@ -6,7 +6,7 @@
       <h3 class="text-xl tex-gray-900">Los Angeles</h3>
       <p class="text-gray-600">Live like the stars in these luxurious Southern California estates.</p>
       <div class="mt-6 sm:flex sm:overflow-x-auto sm:space-x-2 sm:pb-8">
-        <article class="sm:max-w-xs sm:w-full sm:flex-shrink-0" v-for="i in 4">
+        <article :class="{ 'mt-10': i > 1 }" class="sm:mt-0 sm:max-w-xs sm:w-full sm:flex-shrink-0" v-for="i in 4">
           <div>
             <img class="rounded-lg h-64 object-cover w-full" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
           </div>
